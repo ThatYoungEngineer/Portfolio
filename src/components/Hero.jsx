@@ -11,12 +11,12 @@ const Hero = () => {
                     <div>
                         <h1 className='font-Poppins-Bold text-[3rem] text-white uppercase leading-10'>hi, i'm talha!</h1>
                         <h1 className='font-Poppins-Bold text-[3rem] text-white uppercase'>
-                            Creative
+                            Creative 
                             <span className='text-primary font-Poppins-Black'> Coder</span>
                         </h1>
                     </div>
                     <p className='font-Poppins-Regular text-[1rem] text-secondary leading-7'>
-                        I'm a passionate developer with a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.
+                        I'm a passionate Hello developer with a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.
                     </p>
                     <div>
                         <button className='px-10 py-5 bg-primary rounded-sm font-Poppins-Regular text-[#02050a] hover:bg-[#141c27] hover:text-white group/btn transition ease-in-out duration-300'>
