@@ -53,7 +53,7 @@ const Footer = () => {
         <div className='w-screen sm_tablet:max-w-[700px] sm_desktop:max-w-[1120px] h-fit flex flex-col justify-between text-white px-3 sm_desktop:px-0'>
             <section className='sm_desktop:w-full sm_desktop:justify-between flex flex-col sm_desktop:flex-row py-20 gap-y-10'>
                 {footerContent.map((data, index) => (
-                    <div key={index} className='flex gap-5' data-aos="fade-left" data-aos-duration="1500" >
+                    <div key={index} className='flex gap-5' data-aos="fade-left" data-aos-duration="1500"  data-aos-once="true" >
                         <span className='w-16 h-16 rounded-full bg-primary flex items-center justify-center'>
                             <img 
                                 src={data.image} 

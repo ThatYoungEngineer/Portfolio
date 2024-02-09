@@ -26,7 +26,7 @@ const portfolio = [
         description: "A web app that uses an Meme Images API to get humorous images and you can add text on top and bottom of the image."
     },
     {
-        link: '2000',
+        link: '3000',
         image: wheelmoto,
         title: "Wheel Moto",
         description: "An e-car rental service to get on-demand available car on your doorsteps."
@@ -36,7 +36,7 @@ const portfolio = [
 const Projects = () => {
   return (
     <main id='projects' className="w-screen min-h-screen bg-[#02050a] flex flex-col gap-24 items-center justify-start py-28 px-3 sm_desktop:px-0">
-        <header className="w-screen sm_tablet:max-w-[700px] sm_desktop:max-w-[1120px] flex flex-col gap-5 px-3 sm_desktop:px-0" data-aos="fade-up" data-aos-duration="1500">
+        <header className="w-screen sm_tablet:max-w-[700px] sm_desktop:max-w-[1120px] flex flex-col gap-5 px-3 sm_desktop:px-0" data-aos="fade-up" data-aos-duration="1500"  data-aos-once="true">
             <h3 className="font-Poppins-Medium text-xl text-primary uppercase">my recent portfolio</h3>
             <h2 className="font-Poppins-SemiBold text-2xl lg_mobile:text-3xl sm_desktop:text-4xl text-white leading-relaxed"> Elevate your brand to new <br className='hidden sm_desktop:block' /> heights with our portfolio expertise </h2>
         </header>
@@ -74,7 +74,3 @@ const Projects = () => {
 }
 
 export default Projects
-
-
-
-// https://ticktacctoee.netlify.app/

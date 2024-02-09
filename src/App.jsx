@@ -40,7 +40,7 @@ const App = () => {
   }, [])
 
   return loading ? <Preloader /> : (
-    <>
+    <div className='w-screen max-w-screen overflow-x-hidden'>
       <Cursor />
       <Navbar />
       <Hero />
@@ -50,7 +50,7 @@ const App = () => {
       <Projects />
       <Footer />
       <ScrollToTop />
-    </>
+    </div>
   );
 };
 

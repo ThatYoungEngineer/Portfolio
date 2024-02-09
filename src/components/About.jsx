@@ -16,7 +16,7 @@ const About = () => {
                     </p>
                 </header>
             </section>
-            <section className='flex-1 w-full h-full object-cover flex items-center justify-center sm_desktop:justify-end relative' data-aos="fade-left" data-aos-duration="2000"> 
+            <section className='flex-1 w-full h-full object-cover flex items-center justify-center sm_desktop:justify-end relative' data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" > 
                 <div className='w-[90%] relative'>
                     <img
                         src={me}

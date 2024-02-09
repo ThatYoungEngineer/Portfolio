@@ -13,7 +13,7 @@ const services = [
             </svg>
         ), 
         headline: "website design",
-        content:   "Elevate your online presence with captivating website designs that seamlessly blend aesthetics and functionality. My designs are tailored to reflect your brand identity, ensuring a visually appealing and user-friendly experience for your visitors." 
+        content: "Elevate your online presence with captivating website designs that seamlessly blend aesthetics and functionality. My designs are tailored to reflect your brand identity, ensuring a visually appealing and user-friendly experience for your visitors." 
     },
     {
         delay: "400",
@@ -29,7 +29,7 @@ const services = [
             </svg>
         ), 
         headline: "website development",
-        content:   "Transform your ideas into dynamic and responsive websites. My web development services encompass the latest technologies and coding standards, whether it is SPA or MPA I deliver seamless navigation and optimal performance." 
+        content: "Transform your ideas into dynamic and responsive websites. My web development services encompass the latest technologies and coding standards, whether it is SPA or MPA I deliver seamless navigation and optimal performance." 
     },
     {
         delay: "800",
@@ -45,7 +45,7 @@ const services = [
             </svg>
         ), 
         headline: "logo design",
-        content:   "Make a lasting first impression with a distinctive logo that encapsulates the essence of your brand. My logo designs are crafted to be memorable, versatile, and representative of your unique story, fostering brand recognition and trust." 
+        content: "Make a lasting first impression with a distinctive logo that encapsulates the essence of your brand. My logo designs are crafted to be memorable, versatile, and representative of your unique story, fostering brand recognition and trust." 
     }
 ]
 
@@ -59,7 +59,11 @@ const Service = () => {
         <section className="w-screen sm_tablet:max-w-[700px] sm_desktop:max-w-[1120px] h-full sm_desktop:space-y-0 px-3 sm_desktop:px-0
         flex items-center justify-center sm_tablet:justify-between flex-col sm_tablet:flex-row flex-wrap gap-y-16 sm_tablet:gap-y-10">
             {services.map( (service, index) => (
-                <div key={index} className="relative w-full max-w-screen sm_tablet:max-w-[330px] sm_desktop:max-w-[350px] h-[350px] border-4 border-[#191919] text-white px-2 lg_mobile:px-5 pt-14 pb-0 flex flex-col gap-3 items-center justify-start" data-aos="fade-right" data-aos-duration="2500" data-aos-once="true" data-aos-delay={service.delay}>
+                <div 
+                    key={index} 
+                    className="relative w-full max-w-screen sm_tablet:max-w-[330px] sm_desktop:max-w-[350px] h-[350px] border-4 border-[#191919] text-white px-2 lg_mobile:px-5 pt-14 pb-0 flex flex-col gap-3 items-center justify-start" 
+                    data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-delay={service.delay}
+                >
                     <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">{service.img}</span>
                     <h2 className="font-Poppins-SemiBold text-xl uppercase">{service.headline}</h2>
                     <p className="font-Poppins-Regular text-[#A2A2A2] text-base text-center leading-relaxed">{service.content}</p>

@@ -31,7 +31,7 @@ const Accomplishments = () => {
   return (
     <main id="accomplishments" className='w-screen bg-[#09101a] flex items-start justify-center'>
       <section className='w-screen sm_tablet:max-w-[700px] sm_desktop:max-w-[1120px] h-full flex flex-col gap-24 items-start justify-start py-28 px-3 sm_desktop:px-0'>
-        <header className="w-full flex flex-col gap-5 items-center justify-center" data-aos="fade-up" data-aos-duration="1500">
+        <header className="w-full flex flex-col gap-5 items-center justify-center" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" >
           <h3 className="font-Poppins-Medium text-xl text-primary uppercase text-center">education & skills</h3>
           <h2 className="font-Poppins-SemiBold text-2xl lg_mobile:text-3xl sm_desktop:text-4xl text-white leading-relaxed text-center">Showcasing your talent, <br className="hidden sm_desktop:block" /> amplifying your impact</h2>
         </header> 
