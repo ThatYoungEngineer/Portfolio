@@ -42,7 +42,7 @@ const App = () => {
   }, []);
 
   return loading ? <Preloader /> : (
-    <>
+    <div className=''>
       <Cursor />
       <Navbar />
       <Hero />
@@ -52,7 +52,7 @@ const App = () => {
       <Projects />
       <Footer />
       <ScrollToTop />
-    </>
+    </div>
   );
 };
 
