@@ -2,7 +2,7 @@ import me from '../assets/images/mine.png'
 import background from '../assets/images/background.jpg'
 import shape from '../assets/images/banner_shape.png'
 
-import resume from '../assets/files/MuhammadTalha.pdf'
+import resume from '../assets/files/Muhammad_Talha.pdf'
 
 import GetAppIcon from '@mui/icons-material/GetApp'
 import { useState, useEffect } from 'react'
