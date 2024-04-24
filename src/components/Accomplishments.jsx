@@ -1,13 +1,23 @@
 const accomplishments = [
   {
+    date: 'June, 2023 - Present',
+    headline: 'Self-Employed',
+    content: 'I am currently working as a part-time freelancer with a demonstrated history in the field of design and development, with a flair for innovation and a commitment to excellence.'
+  },
+  {
+    date: 'March, 2024 - Present',
+    headline: 'Laravel Dev (@SolutionSurface)',
+    content: `Working mostly as a Backend developer. Responsible for managing the in-house project's dashboard and developing complex modules.`
+  },
+  {
     date: 'Aug, 2023 - Nov, 2023',
-    headline: 'Frontend Developer (@MAF Tech)',
+    headline: 'Frontend Dev (@MAF Tech)',
     content: 'I completed my internship in frontend as a React JS developer. I developed the complete responsive and visually appealing interface for their e-commerce platform.'
   },
   {
-    date: 'June, 2023 - Present',
-    headline: 'Self-Employed',
-    content: 'I have worked as a freelancer with a demonstrated history in the field of design and development. with a flair for innovation and a commitment to excellence.'
+    date: 'July, 2022 - April, 2023',
+    headline: 'Junior Dev (@Nesco Associates)',
+    content: 'I joined Nesco as a part-time junior developer where i got my hands on web development, web design and data entry related work.'
   },
   {
     date: 'Nov, 2019 - Aug, 2023',
@@ -22,9 +32,11 @@ const accomplishments = [
 ]
 
 const skills = [
-  { language: 'HTML', proficiency: '90%' }, { language: 'CSS', proficiency: '80%' },
-  { language: 'JS', proficiency: '70%' }, { language: 'React JS', proficiency: '50%' }, 
-  { language: 'Tailwind CSS', proficiency: '80%' }, { language: 'Figma', proficiency: '50%' }
+  { language: 'JS', proficiency: '70%' }, { language: 'React JS', proficiency: '70%' }, 
+  { language: 'Node JS', proficiency: '30%' }, { language: 'Express JS', proficiency: '50%' }, 
+  { language: 'Mongo DB', proficiency: '70%' }, { language: 'SQL', proficiency: '70%' }, 
+  { language: 'PHP', proficiency: '60%' }, { language: 'Laravel', proficiency: '50%' }, 
+  { language: 'Tailwind CSS', proficiency: '80%' }, { language: 'Figma', proficiency: '50%' },
 ]
 
 const Accomplishments = () => {

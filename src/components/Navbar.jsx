@@ -5,6 +5,8 @@ import { Link } from 'react-scroll'
 import emailjs from '@emailjs/browser'
 import Logo from '../assets/images/logo.png'
 import CloseIcon from '@mui/icons-material/Close'
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 const navList = [
     { title: "Home", id: "hero", offset: 0 }, { title: "Services", id: "service", offset: 0 },
@@ -13,22 +15,35 @@ const navList = [
 ]
 
 const Navbar = () => {
+
     const [isOpen, setOpen] = useState(false)
-    const [error, setError] = useState(null)
-    const [success, setSuccess] = useState(null)
-    const nodeRef = useRef(null)
-    const formRef = useRef(null)
+    const [error, setError] = useState("")
+    const [loading, setLoading] = useState(false)
+    const [success, setSuccess] = useState("")
+    const nodeRef = useRef("")
+    const formRef = useRef("")
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
 
     const sendEmail = (e) => {
+        setLoading(true)
         e.preventDefault()
-        setError(null)
-        setSuccess(null)
+        setError("")
+        setSuccess("")
         emailjs.sendForm('service_zprwz5d', 'template_lbyvb9e', formRef.current, 'aX79ws_jVJHWrXn-F')
         .then((result) => {
+            setName('')
+            setEmail('')
+            setMessage('')
             setSuccess(true)
-        }, (error) => {
+            setLoading(false)
+        })
+        .catch((error) => {
             setError(true)
-        });
+            setLoading(false)
+        })
     }
 
     useEffect(() => {
@@ -66,7 +81,7 @@ const Navbar = () => {
                         ref={nodeRef}
                         onClose={() => setOpen(false)}
                     >
-                        <div
+                        <header
                             className='w-full h-fit bg-[#141C27] px-7 py-5 sm_desktop:p-5 flex items-center justify-between'
                         >
                             <img 
@@ -80,7 +95,7 @@ const Navbar = () => {
                             >
                                 <CloseIcon className='text-[#222] group-hover/icon:text-yellow-300' />
                             </span>
-                        </div>
+                        </header>
                         <div className='w-full h-full overflow-y-scroll flex flex-col gap-10 px-7 sm_desktop:px-10 py-20'>
                             <span className='flex flex-col gap-3'>
                                 <h2 className='font-Poppins-Medium text-xl text-white uppercase'>about me</h2>
@@ -94,18 +109,18 @@ const Navbar = () => {
                                 className='w-full flex flex-col gap-7 pb-20'
                             >
                                 <h2 className='font-Poppins-Medium text-2xl text-white uppercase'>get in touch</h2>
-                                <input type="text" name='name' className='w-full p-5 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none ' placeholder='Your Name' required />
-                                <input type="email" name='email' className='w-full p-5 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none' placeholder='Your Email' required />
-                                <textarea name='message' className='w-full h-40 p-5 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none resize-none' placeholder='Message' required></textarea>
+                                <input type="text" name='name' className='w-full p-5 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none' placeholder='Your Name' value={name} onInput={(e) => setName(e.target.value)} required />
+                                <input type="email" name='email' className='w-full p-5 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none' placeholder='Your Email' value={email} onInput={(e) => setEmail(e.target.value)} required />
+                                <textarea name='message' className='w-full h-40 p-5 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none resize-none' placeholder='Please enter your message..' value={message} onInput={(e) => setMessage(e.target.value)} required></textarea>
                                 <button
                                     type="submit" 
                                     className='w-fit px-14 py-5 bg-primary rounded-sm font-Poppins-Medium text-[#02050a] hover:bg-[#141c27] focus:outline-none focus:shadow-md focus:shadow-white hover:text-white cursor-pointer disabled:cursor-not-allowed transition ease-in-out duration-300'
-                                    disabled={success || error}
+                                    disabled={ success || loading || error || name === "" || email === '' || message === '' }
                                 >
-                                    Submit
+                                    { loading ? <CircularProgress size={30}/> : "Submit" }
                                 </button>
-                                {success && <h2 className='w-full font-Poppins-Regular text-base text-primary text-center'>"An email has been sent successfully!"</h2>}  
-                                {error && <h2 className='w-full font-Poppins-Regular text-base text-[#ff4135] text-center'>"Something went wrong with the email."</h2>}                 
+                                {success && <h2 className='w-full font-Poppins-Regular text-base text-primary text-center'>ThankYou for reaching out! <br /> Your message has been sent successfuly.</h2>}  
+                                {error && <h2 className='w-full font-Poppins-Regular text-base text-[#ff4135] text-center'>"Something went wrong! Please try again."</h2>}                 
                             </form>
                         </div>
                     </div>

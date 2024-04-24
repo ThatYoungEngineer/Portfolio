@@ -22,6 +22,7 @@
     "node": "^21.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.4",
     "react-scroll": "^1.9.0",
     "react-transition-group": "^4.4.5",
     "vercel": "^32.3.0"

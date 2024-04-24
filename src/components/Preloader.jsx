@@ -2,7 +2,6 @@ import Box from '@mui/material/Box'
 import LinearProgress from '@mui/material/LinearProgress'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 
-
 const theme = createTheme({
     palette: {
       primary: {

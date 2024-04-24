@@ -32,7 +32,7 @@ const Hero = () => {
             <main className='w-full sm_tablet:max-w-[700px] sm_desktop:max-w-[1120px] h-full flex items-center justify-between pt-10'>
                 <section className='w-full sm_desktop:w-1/2 flex flex-col gap-10 px-3 sm_tablet:px-0 sm_desktop:pr-10'>
                     <div className=''>
-                        <h1 className='font-Poppins-Bold text-[3rem] text-white uppercase leading-tight'>hi, i'm talha!</h1>
+                        <h1 className='font-Poppins-Bold text-[3rem] text-white uppercase leading-tight'>hi, i&apos;m talha!</h1>
                         <h1 className='font-Poppins-Bold text-[3rem] text-white uppercase relative'>
                             Creative
                             <span id='creative' className='text-primary font-Poppins-Black'> {expertise[myExpertise]} </span>
@@ -40,7 +40,7 @@ const Hero = () => {
                     </div>
                     <br className='sm_desktop:hidden' />
                     <p className='font-Poppins-Regular text-[1rem] text-secondary leading-7'>
-                        I'm an Associate Software Engineer (ASE) with a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.
+                        I&apos;m an Associate Software Engineer (ASE) with <span className='font-Poppins-Medium text-white'>1+ year of experience</span>, and a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.
                     </p>
                     <div>
                         <a href={resume} download='MuhammadTalha_resume' className='border-none outline-none'>

@@ -1,25 +1,35 @@
-import rumzz from '../assets/images/rumz.png'
+import castro from '../assets/images/castro.png'
+import anyhand from '../assets/images/anyhand.png'
 import material from '../assets/images/material.png'
 import wheelmoto from '../assets/images/wmoto.png'
 import mGen from '../assets/images/mGen.png'
 
+import Marquee from "react-fast-marquee"
+
 const portfolio = [
     {
         delay: "0",
-        link: 'https://rumzz.netlify.app/',
-        image: rumzz,
-        title: "RUMZZ",
-        description: "An E-commerce Single Page platform that deals in shoes. The project was built in using MERN stack."
+        link: 'https://shopcastro.netlify.app/',
+        image: castro,
+        title: "Castro",
+        description: "An E-commerce platform that deals in clothing. The project was built using the MERN stack."
     },
     {
-        delay: "300",
+        delay: "600",
+        link: 'https://anyhandy.netlify.app/',
+        image: anyhand,
+        title: "anyhand",
+        description: "A marketplace when users can acquire heroes for their services, and heroes can provide their service as well by signing up to platform."
+    },
+    {
+        delay: "800",
         link: 'https://4material.store/',
         image: material,
         title: "4Material",
         description: "A marketplace in the domain of construction, having automated quotation system removing the need of traditional e-commerce."
     },
     {
-        delay: "600",
+        delay: "1600",
         link: 'https://memesgenerator-home.netlify.app/',
         image: mGen,
         title: "Memes Generator",
@@ -42,33 +52,68 @@ const Projects = () => {
         </header>
         <div className='w-screen sm_tablet:max-w-[700px] sm_desktop:max-w-[1120px] flex items-center justify-between flex-wrap gap-y-5 px-3 sm_desktop:px-0'>
             { portfolio.map((port, index) => (
-                <section key={index} className='w-screen sm_desktop:max-w-[550px] overflow-hidden relative group/overlay' data-aos="fade-right" data-aos-duration="1500" data-aos-delay={port.delay} data-aos-once="true">
-                    <a href={port.link} target='__blank'>
-                        <img src={port.image} alt={`Project ${index}`} className='w-full sm_desktop:w-[550px] h-fit object-contain hover:scale-105 transition-all ease-in-out duration-300' />
-                    </a>
-                    <div
-                        className='hidden absolute bottom-0 left-0 w-full h-1/2 flex-col gap-2 items-start justify-center px-5 group-hover/overlay:flex animate__animated animate__fadeInUp animate__faster' 
-                        style={{
-                            background: 'linear-gradient(0deg, #02050ad3 0%, rgba(2, 5, 10, 0.5802696078431373) 61%, rgba(2, 5, 10, 0) 100%)'
-                        }}
-                    >
-                        <h3 className='font-Poppins-SemiBold text-white'>{port.title}</h3>
-                        <span className='flex gap-2'>
-                            <hr className='mt-1 min-w-[30px] h-1 border-primary self-start'/>
-                            <p className='text-slate-200 text-xs font-Poppins-Regular'>{port.description}</p>
-                        </span>
-                    </div>
-                </section>
+                <a href={port.link} target='__blank' key={index} className='w-screen sm_desktop:max-w-[550px] overflow-hidden relative group/overlay' data-aos="fade-right" data-aos-duration="1500" data-aos-delay={port.delay} data-aos-once="true">
+                    <img src={port.image} alt={`Project ${index}`} className='w-full sm_desktop:w-[550px] h-fit object-contain group-hover/overlay:scale-105 transition-all ease-in-out duration-300' />
+                    <section >
+                        <div className='hidden absolute bottom-0 left-0 w-full h-full items-end justify-end bg-transparent group-hover/overlay:flex animate__animated animate__fadeInUp animate__faster' >
+                            <div
+                                className='flex flex-col gap-2 px-5 items-start py-10'
+                                style={{
+                                    background: 'linear-gradient(0deg, #02050ad3 0%, rgba(2, 5, 10, 0.5802696078431373) 61%, rgba(2, 5, 10, 0) 100%)'
+                                }}
+                            >
+                                <h3 className='font-Poppins-SemiBold text-white'>{port.title}</h3>
+                                <span className='flex gap-2'>
+                                    <hr className='mt-1 min-w-[30px] h-1 border-primary self-start'/>
+                                    <p className='text-slate-200 text-xs font-Poppins-Regular'>{port.description}</p>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                </a>
             ))}
         </div>
-        <div
-            id='marqueeContainer'
+        <Marquee
             className='w-screen flex justify-start py-7 bg-primary whitespace-nowrap overflow-hidden'
+            speed={250}
         >
-            <p id='marqueeText' >
-                HTML * CSS * JAVASCRIPT * REACT JS * WEB DEVELOPMENT * PHP * FIGMA * SPA * MPA * MYSQL * MONGODB * REST API * NODE JS * ANGULAR * WEB DESIGN
-            </p>
-        </div>
+            <p className='marqueeText'>WEB DEVELOPMENT</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>HTML5</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>CSS3</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>JAVASCRIPT</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>REACT JS</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>REDUX-TOOLKIT</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>PHP</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>LARAVEL</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>FIGMA</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>SPA</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>MPA</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>MYSQL</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>MONGO DB</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>REST API</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>NODE JS</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>ANGULAR JS</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>WEB DESIGN</p>
+            <p className='marqueeText'>*</p>
+            <p className='marqueeText'>NEXT JS</p>
+            <p className='marqueeText'>*</p>
+        </Marquee>
     </main>
   )
 }
