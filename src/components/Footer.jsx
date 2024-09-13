@@ -31,7 +31,7 @@ const footerContent = [
 const Footer = () => {
 
   return (
-    <div id='footer' className='w-screen bg-[#02050A] flex flex-col items-center justify-center'>
+    <div id='footer' className='w-screen max-w-screen overflow-hidden bg-[#02050A] flex flex-col items-center justify-center'>
         <div
             className='w-full h-[50vh] relative bg-fixed bg-cover flex flex-col gap-5 items-center justify-center'
             style={{backgroundImage: `url(${connect})`}}

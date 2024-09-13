@@ -3,7 +3,7 @@ import pie from '../assets/images/pie-chart.png'
 
 const About = () => {
   return (
-    <main id='about' className='w-screen min-h-screen bg-[#02050a] flex items-center justify-center py-28'>
+    <main id='about' className='w-screen max-w-screen overflow-hidden min-h-screen bg-[#02050a] flex items-center justify-center py-28'>
         <div className='w-screen sm_tablet:max-w-[700px] sm_desktop:max-w-[1120px]  flex items-start justify-start pb-32 flex-col gap-y-16 gap-x-10 sm_desktop:flex-row px-3 sm_desktop:px-0'>
             <section className='flex-1'>
                 <header className="w-full max-w-[1120px] flex flex-col gap-5" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">

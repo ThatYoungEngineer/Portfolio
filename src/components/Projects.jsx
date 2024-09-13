@@ -1,12 +1,21 @@
 import castro from '../assets/images/castro.png'
 import anyhand from '../assets/images/anyhand.png'
-import material from '../assets/images/material.png'
+import material from '../assets/images/material.webp'
+import pf from '../assets/images/pf.webp'
 import wheelmoto from '../assets/images/wmoto.png'
 import mGen from '../assets/images/mGen.png'
 
 import Marquee from "react-fast-marquee"
 
 const portfolio = [
+    {
+        delay: "0",
+        link: 'https://perspectiveforge.onrender.com/',
+        image: pf,
+        title: "Perspective Forge",
+        description: "A fully secure modern blog-site for developers and tech enthusiasts to get theirselves updated. Featuring authentication for users and admins, dual theme, data caching, modern dashboard with complete validation and error handling. This project is built using MERN Stack."
+
+    },
     {
         delay: "0",
         link: 'https://shopcastro.netlify.app/',
@@ -75,7 +84,7 @@ const Projects = () => {
         </div>
         <Marquee
             className='w-screen flex justify-start py-7 bg-primary whitespace-nowrap overflow-hidden'
-            speed={250}
+            speed={150}
         >
             <p className='marqueeText'>WEB DEVELOPMENT</p>
             <p className='marqueeText'>*</p>

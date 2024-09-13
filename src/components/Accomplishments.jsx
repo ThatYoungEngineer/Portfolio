@@ -5,9 +5,9 @@ const accomplishments = [
     content: 'I am currently working as a part-time freelancer with a demonstrated history in the field of design and development, with a flair for innovation and a commitment to excellence.'
   },
   {
-    date: 'March, 2024 - Present',
+    date: 'Jan, 2024 - June, 2024',
     headline: 'Laravel Dev (@SolutionSurface)',
-    content: `Working mostly as a Backend developer. Responsible for managing the in-house project's dashboard and developing complex modules.`
+    content: `Worked as a Full Stack developer, managed and created modules for the in-house project's dashboard including API creation, UI designing and API integration, also implemented role based authentication.`
   },
   {
     date: 'Aug, 2023 - Nov, 2023',

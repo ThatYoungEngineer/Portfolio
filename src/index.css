@@ -13,6 +13,12 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    width: 100vw;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+}
+
 @font-face {
     font-family: Poppins-Bold;
     src: url(./assets/fonts/Poppins-Bold.ttf);
@@ -268,11 +274,11 @@ select:-webkit-autofill:focus {
 .marqueeText {
     font-family: Poppins-Bold;
     margin-right: 3vw;
-    font-size: 6rem;
+    font-size: clamp(2rem, 2vw + 1rem, 6rem);
     color: transparent;
     pointer-events: none;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #333;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgba(51, 51, 51, 1);
 }
 
 #marqueeContainer:hover #marqueeText {
