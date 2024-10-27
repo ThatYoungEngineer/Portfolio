@@ -1,8 +1,9 @@
 const accomplishments = [
   {
-    date: 'June, 2023 - Present',
-    headline: 'Self-Employed',
-    content: 'I am currently working as a part-time freelancer with a demonstrated history in the field of design and development, with a flair for innovation and a commitment to excellence.'
+    date: 'Oct, 2024 - Present',
+    headline: 'Software Engineer',
+    company: "HazenTech",
+    content: 'I am currently working as a junior software engineer on React/React Native technologies with a demonstrated history in the field of UI design and development, with a flair for innovation and a commitment to excellence.'
   },
   {
     date: 'Jan, 2024 - June, 2024',
@@ -32,11 +33,11 @@ const accomplishments = [
 ]
 
 const skills = [
-  { language: 'JS', proficiency: '70%' }, { language: 'React JS', proficiency: '70%' }, 
-  { language: 'Node JS', proficiency: '30%' }, { language: 'Express JS', proficiency: '50%' }, 
-  { language: 'Mongo DB', proficiency: '70%' }, { language: 'SQL', proficiency: '70%' }, 
-  { language: 'PHP', proficiency: '60%' }, { language: 'Laravel', proficiency: '50%' }, 
-  { language: 'Tailwind CSS', proficiency: '80%' }, { language: 'Figma', proficiency: '50%' },
+  { language: 'JS', proficiency: '90%' }, { language: 'React JS', proficiency: '85%' }, 
+  { language: 'Node JS', proficiency: '60%' }, { language: 'Express JS', proficiency: '70%' }, 
+  { language: 'Mongo DB', proficiency: '80%' }, { language: 'SQL', proficiency: '70%' }, 
+  { language: 'PHP', proficiency: '60%' }, { language: 'Laravel', proficiency: '75%' }, 
+  { language: 'Tailwind CSS', proficiency: '90%' }, { language: 'Figma', proficiency: '60%' },
 ]
 
 const Accomplishments = () => {
@@ -52,7 +53,14 @@ const Accomplishments = () => {
             { accomplishments.map((accomplishment, index) => (
               <div key={index} className='w-full sm_desktop:min-w-[48%] sm_desktop:max-w-[48%] sm_desktop:w-[48%] flex flex-col gap-7'>
                 <span className='font-Poppins-Medium text-primary text-lg border border-primary w-fit p-5'> {accomplishment.date} </span>
-                <h2 className='font-Poppins-SemiBold text-white text-2xl lg_mobile:text-3xl leading-normal'> {accomplishment.headline} </h2>
+                <h2 className='font-Poppins-SemiBold text-white text-2xl lg_mobile:text-3xl leading-normal'> 
+                  {accomplishment.headline} 
+                  {accomplishment.company && 
+                    <a href="https://hazentech.com/" className="text-white" target="__blank">
+                      (@<span className="navList">{accomplishment.company}</span>)
+                    </a> 
+                  }
+                 </h2>
                 <p className='font-Poppins-Medium text-[#A2A2A2] leading-7'> {accomplishment.content} </p>
               </div>
             ))}

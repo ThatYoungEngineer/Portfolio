@@ -2,7 +2,7 @@ import me from '../assets/images/mine.png'
 import background from '../assets/images/background.jpg'
 import shape from '../assets/images/banner_shape.png'
 
-import resume from '../assets/files/MuhammadTalha.pdf'
+import resume from '../assets/files/SoftwareEngineer.pdf'
 
 import GetAppIcon from '@mui/icons-material/GetApp'
 import { useState, useEffect } from 'react'
@@ -40,7 +40,7 @@ const Hero = () => {
                     </div>
                     <br className='sm_desktop:hidden' />
                     <p className='font-Poppins-Regular text-[1rem] text-secondary leading-7'>
-                        I&apos;m an Associate Software Engineer (ASE) with <span className='font-Poppins-Medium text-white'>1+ year of experience</span>, and a mission to create delightful and intuitive digital experiences. With a strong foundation in full stack development and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.
+                        I&apos;m a Software Engineer with <span className='font-Poppins-Medium text-white'>1+ year of experience</span>, and a mission to create delightful and intuitive digital experiences. With a strong foundation in full stack development and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.
                     </p>
                     <div>
                         <a href={resume} download='MuhammadTalha_resume' className='border-none outline-none'>

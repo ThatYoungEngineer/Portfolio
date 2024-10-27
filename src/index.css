@@ -78,16 +78,23 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+.navList:not(:hover) {
+    color: white !important;
+}
+
+.navList,
 #navList li, 
 #footerAnchor {
     position: relative;
     transition: ease-in 300ms;
 }
 
+.navList,
 #navList li:hover {
     color: #3bee9e
 }
 
+.navList::after,
 #navList li::after,
 #footerAnchor::after {
     content: '';
@@ -103,6 +110,7 @@ select:-webkit-autofill:focus {
     transition: transform 0.3s ease-in-out;
 }
 
+.navList:hover::after,
 #navList li:hover::after, 
 #footerAnchor:hover::after {
     transform: scaleX(1);
@@ -110,6 +118,7 @@ select:-webkit-autofill:focus {
     width: 100%;
 }
 
+.navList:not(:hover)::after,
 #navList li:not(:hover)::after, 
 #footerAnchor:not(:hover)::after {
     transform: scaleX(0);

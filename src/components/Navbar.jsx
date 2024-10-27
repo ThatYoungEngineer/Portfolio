@@ -101,7 +101,7 @@ const Navbar = () => {
                             <span className='flex flex-col gap-3'>
                                 <h2 className='font-Poppins-Medium text-xl text-white uppercase'>about me</h2>
                                 <p className='font-Poppins-Regular text-[1rem] text-secondary leading-7'>
-                                    A young and enthusiastic professional who is eager to kickstart his career and bring development skills to contribute to the success of the dynamic company.
+                                Passionate and dedicated Software Engineer with a focus on building optimized and user-centric software solutions. I bring a strong foundation in Full Stack Development and am driven to create clean, scalable, and impactful code.
                                 </p>
                             </span>
                             <form
@@ -110,9 +110,9 @@ const Navbar = () => {
                                 className='w-full flex flex-col gap-7 pb-20'
                             >
                                 <h2 className='font-Poppins-Medium text-2xl text-white uppercase'>get in touch</h2>
-                                <input type="text" name='name' className='w-full p-5 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none' placeholder='Your Name' value={name} onInput={(e) => setName(e.target.value)} required />
-                                <input type="email" name='email' className='w-full p-5 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none' placeholder='Your Email' value={email} onInput={(e) => setEmail(e.target.value)} required />
-                                <textarea name='message' className='w-full h-40 p-5 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none resize-none' placeholder='Please enter your message..' value={message} onInput={(e) => setMessage(e.target.value)} required></textarea>
+                                <input type="text" name='name' className='w-full p-4 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none' placeholder='Your Name' value={name} onInput={(e) => setName(e.target.value)} required />
+                                <input type="email" name='email' className='w-full p-4 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none' placeholder='Your Email' value={email} onInput={(e) => setEmail(e.target.value)} required />
+                                <textarea name='message' className='w-full h-40 p-4 font-Poppins-Medium text-lg bg-transparent text-white border border-primary focus:outline-none resize-none' placeholder='Please enter your message..' value={message} onInput={(e) => setMessage(e.target.value)} required></textarea>
                                 <button
                                     type="submit" 
                                     className='w-fit px-14 py-5 bg-primary rounded-sm font-Poppins-Medium text-[#02050a] hover:bg-[#141c27] focus:outline-none focus:shadow-md focus:shadow-white hover:text-white cursor-pointer disabled:cursor-not-allowed transition ease-in-out duration-300'
