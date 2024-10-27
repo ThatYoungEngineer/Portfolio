@@ -7,7 +7,7 @@ const accomplishments = [
   },
   {
     date: 'Jan, 2024 - June, 2024',
-    headline: 'Full-Stack Dev (@SolutionSurface)',
+    headline: 'Full Stack Dev (@SolutionSurface)',
     content: `Worked as a Full Stack developer, managed and created modules for the in-house project's dashboard including API creation, UI designing and API integration, also implemented role based authentication.`
   },
   {
