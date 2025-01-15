@@ -42,13 +42,13 @@ const Hero = () => {
                     <p className='font-Poppins-Regular text-[1rem] text-secondary leading-7'>
                         I&apos;m a Software Engineer with <span className='font-Poppins-Medium text-white'>1+ year of experience</span>, and a mission to create delightful and intuitive digital experiences. With a strong foundation in full stack development and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.
                     </p>
-                    <div>
+{/*                     <div>
                         <a href={resume} download='MuhammadTalha_resume' className='border-none outline-none'>
                             <button className='px-10 py-5 bg-primary rounded-sm font-Poppins-Regular text-[#02050a] hover:bg-[#141c27] focus:outline-none focus:shadow-md focus:shadow-white hover:text-white group/btn transition ease-in-out duration-300'>
                                 Download CV <GetAppIcon className=' text-[#222] group-hover/btn:text-white'/>
                             </button>
                         </a>
-                    </div>
+                    </div> */}
                 </section>
                 <section className='w-[40%] h-[80vh] sm_desktop:flex items-center justify-center hidden'>
                     <div className='w-full h-[600px] relative flex items-center justify-center'>
