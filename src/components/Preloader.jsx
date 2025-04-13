@@ -11,10 +11,6 @@ const theme = createTheme({
     },
 });
 
-Preloader.propTypes = {
-  animateOut: PropTypes.bool.isRequired,
-}
-
 const Preloader = ({ animateOut }) => {
     return (
         <ThemeProvider theme={theme}>
@@ -34,3 +30,7 @@ const Preloader = ({ animateOut }) => {
 }
 
 export default Preloader
+
+Preloader.propTypes = {
+  animateOut: PropTypes.bool.isRequired,
+}
